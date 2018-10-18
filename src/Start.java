@@ -16,7 +16,7 @@ public class Start {
 		System.setProperty("webdriver.chrome.driver", lt);
 		
 		ChromeOptions options = new ChromeOptions();
-		//options.addArguments("headless");
+		options.addArguments("headless");
 		
 		ShopAnimeDesigns sad = new ShopAnimeDesigns(new ChromeDriver(options));
 		Product[] products = sad.getProducts();
